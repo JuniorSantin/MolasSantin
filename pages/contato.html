@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contato.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="contatoGrid">
+        <div class="cabecalhoGrid">
+            <div class="titulo">
+                <h1 class="logo">Posto de molas Santin</h1>
+            </div>
+            <div>
+                <img class="caminhao" src="images/Caminhao.png" alt="caminhao">
+            </div>
+        </div>
+
+        <div class="menuGrid">
+            <list>
+                <ul class="listaInicial">
+                    <li><a href="index.html"> Home </a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="historia.html">Nossa história</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="encomendar.html">Encomendar</a></li>
+                </ul>
+            </list>
+        </div>
+
+        <div class="corpoContato">
+            <div class="tituloContato">
+                <h1>Olá</h1>
+                <h3>Por favor, preencha o formulário e entraremos em contato:</h3>
+                <br>
+            </div>
+
+            <form class="formulario">
+                <fieldset class="campoFormulario">
+                    <div>
+                        <br>
+                        <label>Nome:</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+
+                    <br><br>
+
+                    <div>
+                        <label>Sobrenome:</label>
+                        <input type="text" name="sobrenome" id="sobrenome">
+                    </div>
+
+                    <br><br>
+
+                    <div>
+                        <label>Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <br><br>
+                    <div>
+                        <label>Lugar onde você reside:</label>
+                        <select id="Tipos">
+                            <option selected disabled value="">Escolha</option>
+                            <option>RS</option>
+                            <option>SC</option>
+                            <option>PR</option>
+                            <option>Não resido no Sul</option>
+                        </select>
+                    </div>
+
+                    <br><br>
+
+                    <div>
+                        <label>Sinta-se à vontade para nos criticar, elogiar, ou tirar dúvidas:</label>
+                        <p><textarea row="6" style="width: 25em" id="voce" name="voce"></textarea></p>
+                        <button type="submit">Concluido</button>
+                        <button type="reset">Limpar</button>
+                        <br><br>
+                    </div>
+
+                </fieldset>
+            </form>
+
+            <img class="molas" src="images/molas.jpg" alt="feixe de molas">
+
+        </div>
+
+
+
+        <footer class="rodape">
+            <p>Endereço: xxxxx xx xxx, xxx</p>
+            <br>
+            <p>Fone: (53) xxxxx-xxxx</p>
+            <br>
+            <p><b>Todos os direitos reservados</b></p>
+            <br>
+            <p>Molas Santin &copy; 2022</p>
+            <br>
+            <p><a href="">Voltar ao topo</a></p>
+            <br>
+            <a href="index.html">Voltar a página inicial</a>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

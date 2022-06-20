@@ -1,0 +1,140 @@
+.texto1{
+    grid-area: texto1;
+}
+
+.texto2{
+    grid-area: texto2;
+}
+
+.texto3{
+    grid-area: texto3;
+}
+
+.corpoHistoria{
+    grid-area: corpoHistoria;
+    padding: 100px;
+    margin-top: 20px;
+}
+
+.corpoHistoria ul{
+    padding-left: 25px;
+}
+
+.cabecalhoGrid{
+    grid-area: cabecalhoGrid;
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "titulo caminhao";
+}
+
+.titulo{
+    grid-area: titulo;
+    font-size: 300%;
+    color: rgb(10, 18, 143);
+    margin-left: 100px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.corpoCaminhao{
+    grid-area: caminhao;
+}
+
+.caminhao{
+    height: 140px;
+    margin-top: 20px;
+}
+
+.menuGrid{
+    grid-area: menuGrid;
+}
+
+.listaInicial{
+    list-style: none;
+    background-color: rgb(10, 18, 143);
+}
+
+.listaInicial li{
+    display: inline;
+    padding: 132px;
+}
+
+.listaInicial li a{
+    font-size: 120%;
+    text-decoration-line: none;
+    padding: 10px;
+    color: white;
+    display: inline-block;
+}
+
+.listaInicial li a:hover{
+    color:rgb(10, 18, 143);
+    background-color:white;
+    
+}
+
+.rodape{
+    grid-area: rodape;
+    margin-top: 500px;
+    padding: 100px;
+    background-color:rgb(10, 18, 143);
+    color: white;
+    border-top: solid black;
+}
+
+.rodape a{
+    color: white;
+}
+
+.molas{
+    margin-top: 100px;
+    margin-bottom: 0;
+    padding-left: 366px;
+    opacity: 0.5;
+}
+
+.historiaGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 160px 100px 550px 1000px;
+    grid-template-areas: 
+    "cabecalhoGrid"
+    "menuGrid"
+    "corpoHistoria"
+    "rodape";
+}
+
+@media only screen and (max-width:768px){
+    .titulo{
+        grid-area: titulo;
+        font-size: 150%;
+        color: rgb(10, 18, 143);
+        margin-left: 50px;
+        margin-top: 20px;
+        position: relative;
+    }
+    .corpoHistoria{
+        grid-area: corpoHistoria;
+        padding: 50px;
+        width: 60%; 
+    }
+    .listaInicial li{
+        padding: 10px;
+    }
+    .molas{
+        width: 0%;  
+    }
+
+    .historiaGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 160px 100px 600px 1000px;
+        grid-template-areas: 
+        "cabecalhoGrid"
+        "menuGrid"
+        "corpoHistoria"
+        "rodape";
+    }
+}

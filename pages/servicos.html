@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="servicos.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+    </style>
+</head>
+
+<body>
+    
+    <div class="servicosGrid">
+        <div class="cabecalhoGrid">
+            <div class="titulo">
+                <h1 class="logo">Posto de molas Santin</h1>
+            </div>
+            <div>
+                <img class="caminhao" src="images/Caminhao.png" alt="caminhao">
+            </div>
+        </div>
+
+        <div class="menuGrid">
+            <list>
+                <ul class="listaInicial">
+                    <li><a href="index.html"> Home </a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="historia.html">Nossa história</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="encomendar.html">Encomendar</a></li>
+                </ul>
+            </list>
+        </div>
+
+            <div class="corpoServicos">
+
+                <h1>Serviços</h1>
+
+                <br>
+
+                <div>
+                    <label>Quais serviços deseja?</label>
+                    <label>
+                        <input type="radio" name="servicos" value="manutencao" checked>Manutençäo
+                    </label>
+
+                    <label>
+                        <input type="radio" name="servicos" value="Instalacao">Instalação de peças novas
+                    </label>
+                </div>
+
+                <br><br>
+
+                <div>
+                    <label>Selecione o veiculo:</label>
+                    <input type="checkbox" id="veiculo1" value="Caminhão">
+                    <label for="veiculo1">Caminhão</label>
+                    <input type="checkbox" id="veiculo2" value="Carro">
+                    <label for="veiculo2">Carro</label>
+                    <input type="checkbox" id="veiculo3" value="Ônibus">
+                    <label for="veiculo3">Ônibus</label>
+                </div>
+
+                <br><br>
+
+                <div>
+                    <label>Tipos de manutenção</label>
+                    <select id="Tipos">
+                        <option selected disabled value="">Escolha</option>
+                        <option>Básica</option>
+                        <option>Intermediária</option>
+                        <option>Completa</option>
+                    </select>
+                </div>
+
+                <br><br>
+
+                <h2>Selecione abaixo uma data para comparecer a oficina com seu veículo</h2>
+
+                <div>
+                    <label>Datas disponíveis:</label>
+                    <select id="Tipos">
+                        <option selected disabled value="">Selecionar</option>
+                        <option>28/05</option>
+                        <option>03/06</option>
+                        <option>09/06</option>
+                        <option>21/06</option>
+                        <option>24/06</option>
+                        <option>30/06</option>
+                    </select>
+
+                    <button type="submit">Concluido</button>
+                </div>
+
+                <img class="molas" src="images/molas.jpg" alt="feixe de molas">
+
+            </div>
+
+            <footer class="rodape">
+                <p>Endereço: xxxxx xx xxx, xxx</p>
+                <br>
+                <p>Fone: (53) xxxxx-xxxx</p>
+                <br>
+                <p><b>Todos os direitos reservados</b></p>
+                <br>
+                <p>Molas Santin &copy; 2022</p>
+                <br>
+                <p><a href="">Voltar ao topo</a></p>
+                <br>
+                <a href="index.html">Voltar a página inicial</a>
+
+            </footer>
+
+        </div>
+</body>
+
+</html>
