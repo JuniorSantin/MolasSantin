@@ -14,6 +14,7 @@
     margin-left: 100px;
     margin-top: 20px;
     position: relative;
+    transform: skew(-20deg);
 }
 
 .corpoCaminhao{
@@ -45,6 +46,7 @@
     padding: 10px;
     color: white;
     display: inline-block;
+    transition: background 0.5s;
 }
 
 .listaInicial li a:hover{
@@ -57,9 +59,8 @@
     grid-area: rodape;
     margin-top: 500px;
     padding: 100px;
-    background-color:rgb(10, 18, 143);
+    background-image: linear-gradient(to top, rgb(10, 18, 143) 95%, white);
     color: white;
-    border-top: solid black;
 }
 
 .rodape a{
