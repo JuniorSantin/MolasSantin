@@ -1,5 +1,4 @@
 .cabecalhoGrid{
-    grid-area: cabecalhoGrid;
     display: grid;
     grid-template-columns:  1fr;
     grid-template-rows: 1fr;
@@ -9,12 +8,17 @@
 
 .titulo{
     grid-area: titulo;
-    font-size: 300%;
+    font-size: 500%;
     color: rgb(10, 18, 143);
     margin-left: 100px;
     margin-top: 20px;
     position: relative;
     transform: skew(-20deg);
+}
+
+.logo{
+    font-size: 70%;
+    margin-top: 30px;
 }
 
 .corpoCaminhao{
@@ -26,37 +30,17 @@
     margin-top: 20px;
 }
 
-.menuGrid{
-    grid-area: menuGrid;
-}
-
-.listaInicial{
-    list-style: none;
-    background-color: rgb(10, 18, 143);
-}
-
-.listaInicial li{
-    display: inline;
-    padding: 132px;
-}
-
-.listaInicial li a{
-    font-size: 120%;
-    text-decoration-line: none;
-    padding: 10px;
-    color: white;
-    display: inline-block;
+.navbar a{
     transition: background 0.5s;
 }
 
-.listaInicial li a:hover{
-    color:rgb(10, 18, 143);
+.navbar a:hover{
     background-color:white;
-    
+    color: rgb(10, 18, 143) !important;
 }
 
+
 .rodape{
-    grid-area: rodape;
     margin-top: 500px;
     padding: 100px;
     background-image: linear-gradient(to top, rgb(10, 18, 143) 95%, white);
@@ -75,41 +59,21 @@
 }
 
 .corpoHome{
-    grid-area: corpoHome;
     padding: 100px;
 }
 
-
-.indexGrid{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 160px 100px 300px 1000px;
-    grid-template-areas: 
-    "cabecalhoGrid"
-    "menuGrid"
-    "corpoHome"
-    "rodape";
-}
-
 @media only screen and (max-width:768px){
-    .titulo{
-        grid-area: titulo;
-        font-size: 150%;
-        color: rgb(10, 18, 143);
-        margin-left: 50px;
-        margin-top: 20px;
-        position: relative;
-    }
-    .corpoHome{
-        grid-area: corpoHome;
-        padding: 50px;
-        width: 60%; 
-        
-    }
-    .listaInicial li{
-        padding: 10px;
-    }
     .molas{
-        width: 0%;  
+        margin-top: 30px;
+        margin-bottom: 0;
+        padding-left: 0px;
+        opacity: 0.5;
+        width: 500px;
+    }  
+
+    .corpoHome{
+        padding: 20px;
     }
 }
+
+
