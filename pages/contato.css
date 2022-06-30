@@ -3,7 +3,6 @@
     padding-right: 400px;
 }
 
-
 .campoFormulario{
     border: solid;
     background-color:azure;
@@ -15,7 +14,6 @@
 }
 
 .cabecalhoGrid{
-    
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -57,7 +55,6 @@
 }
 
 .rodape{
-    
     margin-top: 500px;
     padding: 100px;
     background-image: linear-gradient(to top, rgb(10, 18, 143) 95%, white);
@@ -87,7 +84,6 @@
     .formulario{
         padding-left:30px;   
     }
-    
     
     .campoFormulario{
         border: solid;
