@@ -1,0 +1,91 @@
+@import 'style.scss';
+
+.corpoHistoria{ 
+    padding: 100px;
+    margin-top: 20px;
+}
+
+.corpoHistoria{
+    ul{
+        padding-left: 25px;  
+    }
+}
+
+.cabecalhoGrid{
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "titulo caminhao";
+}
+
+.titulo{
+    grid-area: titulo;
+    font-size: 500%;
+    color: $AzulMarinho;
+    margin-left: 100px;
+    margin-top: 20px;
+    position: relative;
+    transform: skew(-20deg);
+}
+
+.logo{
+    font-size: 70%;
+    margin-top: 30px;
+}
+
+.corpoCaminhao{
+    grid-area: caminhao;
+}
+
+.caminhao{
+    height: 140px;
+    margin-top: 20px;
+}
+
+.navbar {
+    a {
+        transition: background 0.5s;
+        &:hover {
+            background-color: $Branco;
+            color: $AzulMarinho !important;
+        }
+    }
+}
+
+.rodape {
+    margin-top: 500px;
+    padding: 100px;
+    background-image: linear-gradient(to top, $AzulMarinho 95%, $Branco);
+    color: $Branco;
+    a {
+        color: $Branco;
+        &:hover{
+            color: $Branco;
+        }
+    }
+}
+
+.molas{
+    margin-top: 100px;
+    margin-bottom: 0;
+    padding-left: 366px;
+    opacity: 0.5;
+}
+
+@media only screen and (max-width:768px){
+    .molas{
+        margin-top: 30px;
+        margin-bottom: 0;
+        padding-left: 0px;
+        opacity: 0.5;
+        width: 500px;
+    }  
+
+    .corpoHistoria{
+        padding: 20px;
+    }
+}
+
+
+
