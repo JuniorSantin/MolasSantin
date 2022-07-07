@@ -10,12 +10,12 @@
 
 .titulo {
     grid-area: titulo;
-    font-size: 500%;
-    color: $AzulMarinho;
-    margin-left: 100px;
-    margin-top: 20px;
-    position: relative;
-    transform: skew(-20deg);
+    font-size:map-get($map: $estiloTitulo, $key:TFonte);
+    color:map-get($map: $estiloTitulo, $key: cor);
+    margin-left:map-get($map: $estiloTitulo, $key: MargemEsquerda);
+    margin-top:map-get($map: $estiloTitulo, $key: MargemCima);
+    position:map-get($map: $estiloTitulo, $key: Posicao);
+    transform:map-get($map: $estiloTitulo, $key: Transformacao);
 }
 
 .logo {
